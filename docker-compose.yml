@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  express:
+    build: ./express
+    container_name: ${APP_NAME}_express
+    ports: 
+      - "3000:3000"
+    entrypoint: npm run start
+    volumes:
+      - ./express/app:/app
