@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Docker Node.js",
+            "type": "node",
+            "request": "attach",
+            "restart": true,
+            "sourceMaps": true,
+            "protocol": "inspector",
+            "port": 9229,
+            "hostName": "0.0.0.0",
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/app"
+        }
+    ]
+}
