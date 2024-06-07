@@ -5,12 +5,12 @@ services:
   express:
     build: ./express
     container_name: ${APP_NAME}_express
-    ports:
-      - "3000:3000"
-      - "9229:9229"
+    # ports:
+    #   - "3000:3000"
+    #   - "9229:9229"
     depends_on:
       - postgres
-    entrypoint: sh -c "npm install && npm run debug"
+    # entrypoint: sh -c "npm install && npm run debug"
     volumes:
       - ./express/app:/app
     environment:
